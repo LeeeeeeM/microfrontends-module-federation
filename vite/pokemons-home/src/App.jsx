@@ -1,10 +1,14 @@
 import PokemonList from "pokemonList/PokemonList";
 import usePokemonSelected from "pokemonList/Pokemon";
 
+import isEmpty from 'lodash/isEmpty';
+
 import "./App.css";
 
 function App() {
   const [pokemon] = usePokemonSelected();
+
+  console.log(isEmpty([]), 'host ----');
 
   return (
     <>

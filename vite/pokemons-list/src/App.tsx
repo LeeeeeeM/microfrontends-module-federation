@@ -1,9 +1,9 @@
-import PokemonList from "./components/PokemonList";
+// import PokemonList from "./components/PokemonList";
 
 function App() {
   return (
     <>
-      <PokemonList />
+      {/* <PokemonList /> */}
     </>
   );
 }

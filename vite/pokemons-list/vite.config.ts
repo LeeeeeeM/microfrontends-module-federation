@@ -12,8 +12,16 @@ export default defineConfig({
       exposes: {
         "./PokemonList": "./src/components/PokemonList",
         "./Pokemon": "./src/atoms/Pokemon.ts",
+        "./DynamicLoading": "./src/test",
       },
-      shared: ["react", "react-dom", "jotai"],
+      shared: {
+        'lodash/isEmpty': {
+          generate: false,
+        },
+        react: "18.2.0",
+        "react-dom": "18.2.0",
+        jotai: "2.1.1",
+      },
     }),
   ],
   build: {

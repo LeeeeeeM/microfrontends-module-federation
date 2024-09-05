@@ -4,6 +4,7 @@ import useSelectPokemon, {
   pokemons as pokemonState,
 } from "../../atoms/Pokemon";
 import { useAtom } from "jotai";
+import isEmpty from "lodash/isEmpty";
 
 import style from "./PokemonList.module.css";
 
@@ -22,6 +23,7 @@ const PokemonList = () => {
 
   useEffect(() => {
     fetchPokemons();
+    console.log(isEmpty([]), 'remote --- ');
   }, []);
 
   return (
